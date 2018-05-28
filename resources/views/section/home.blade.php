@@ -30,7 +30,7 @@
                     </a>
                 </li>
                 <li class="sidebar-brand">
-                    <a href="index.html">Traveller's</a>
+                    <a href="">Hiiluo</a>
                     <hr>
                 </li>
                 <li>
@@ -40,10 +40,7 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#services">Services</a>
-                </li>
-                <li>
-                    <a href="#places">Places</a>
+                    <a href="#blog">Blog</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>
@@ -55,9 +52,9 @@
         <!-- Full Page Image Header Area -->
         <div id="top" class="header">
             <div class="vert-text parallax">
-                <h1 class="header-text">Travel the world</h1>
+                <h1 class="header-text">Welcome to Hiiluo World</h1>
                 <h3 class="header-text">
-                    <em class="header-text">So we are here to guide you</em>
+                    <em class="header-text">There are some guide for you!</em>
                 </h3><br />
                 <a href="#about" class="btn header-btn">Find Out More</a>
                 <br/>
