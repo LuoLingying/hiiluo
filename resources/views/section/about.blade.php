@@ -4,7 +4,7 @@
                 <div class="container inner">
                     <div class="row">
                         <div class="text-center">
-                            <h2 class="main-title">About our company</h2>
+                            <h2 class="main-title">About hiiluo</h2>
                             <hr>
                         </div>
                         <div class="divide50"></div>
@@ -13,7 +13,18 @@
                         </div>
                         <div class="col-sm-8">
                           <h4>Our Working Place</h4>
-                          <p>Vestibulum ligut praesent commodo cursus magna, consectetur et. Cum socis natoque penatibus et magnis dis tellus parturient pharetra montes. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                          <p>
+                            Vestibulum ligut praesent commodo cursus magna, consectetur et. 
+                            Cum socis natoque penatibus et magnis dis tellus parturient pharetra montes. 
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. 
+                            Integer posuere erat a ante venenatis dapibus posuere velit aliquet. 
+                            Maecenas sed diam eget risus varius blandit sit amet non magna. 
+                            Aenean lacinia bibendum nulla sed consectetur. 
+                            Vestibulum id ligula porta felis euismod semper. 
+                            Nullam id dolor id nibh ultricies vehicula ut id elit. 
+                            Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
+                            eget lacinia odio sem nec elit.
+                          </p>
                         </div>
                       </div>
                       <div class="divide50"></div>
