@@ -10,7 +10,6 @@ class TransArticleController extends Controller
     //转载文章列表
     public function list()
     {
-        die('test');
         $list = $transArticle->list();
         dd($list);
         return view('article.trans_article', [

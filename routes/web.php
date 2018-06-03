@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('article/trans_article_list', ['uses' => 'Article\TransArticleController@list']);
+

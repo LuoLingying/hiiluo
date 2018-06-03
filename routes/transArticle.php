@@ -1,2 +1,3 @@
-<?php 
-$router->get('article/trans_article_list', 'Article\TransArticleController@list'); //转载文章列表
+<?php
+ //转载文章列表
+//不知道为什么在这边写路由没用，可能和中间件有关 先暂时写到web中
