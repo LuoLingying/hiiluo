@@ -18,7 +18,7 @@
                             </li>
                         </ul>
                         <hr>
-                        <p>Copyright &copy; <a href="#">Themewagon</a>  2014. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+                        <p>Copyright &nbsp;&copy; <a href="#">hiiluo</a> &nbsp;&nbsp; Luolingying's blog &nbsp;&nbsp; 2018</p>
                         <div class="top-scroll">
                             <a href="#top"><i class="fa fa-arrow-circle-up scroll"></i></a>
                         </div>
@@ -28,9 +28,9 @@
         </footer>
         <!-- /Footer -->
         <!-- JavaScript -->
-        <script src="js/jquery-1.10.2.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+        <script src="{{ asset('js/jquery-1.10.2.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.parallax-1.1.3.js') }}"></script>
 
         <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
         <script>
