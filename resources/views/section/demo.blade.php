@@ -1,9 +1,9 @@
 <!-- Portfolio -->
-<div id="blog" class="blog">
+<div id="demo" class="demo">
     <div class="container">
         <div class="row">
             <div class="text-center">
-                <h2 class="main-title">Some interesting blogs</h2>
+                <h2 class="main-title">Some interesting demos</h2>
                 <hr>
             </div>
         </div>

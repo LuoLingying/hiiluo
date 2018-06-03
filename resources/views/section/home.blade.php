@@ -40,7 +40,7 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#blog">Blog</a>
+                    <a href="#demo">Demo</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>

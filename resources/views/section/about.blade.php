@@ -78,7 +78,7 @@
                             </div>
                         </li>
                     </ul>
-                    <!-- <a href="#" target="_blank" style="text-align:right">more...</a> -->
+                    <a href="{{ url('article/trans_article_list') }}" target="_blank" style="text-align:right">&lt;more...&gt;</a>
                     <!-- /.progress-list -->
                 </div>
                 <!-- /.col -->

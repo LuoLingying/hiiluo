@@ -1,5 +1,5 @@
 @include('section.home', ['page_title' => '首页'])
 @include('section.about')
-@include('blog.blog')
+@include('section.demo')
 @include('section.contact')
 @include('common.footer')
