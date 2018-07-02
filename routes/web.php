@@ -17,3 +17,7 @@ Route::get('/', function () {
 
 Route::get('article/trans_article_list', ['uses' => 'Article\TransArticleController@list']);
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
