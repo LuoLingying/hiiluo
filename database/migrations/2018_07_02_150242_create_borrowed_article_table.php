@@ -16,10 +16,9 @@ class CreateBorrowedArticleTable extends Migration
         Schema::create('borrowed_article', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('content')->default('');
+            $table->string('href')->default('');
             $table->string('description')->default('');
-            $table->string('tag');
-            $table->integer('type')->unsigned()->default(1);
+            $table->string('tag')->default('');
             $table->integer('created_at')->default(0);
             $table->integer('uptated_at')->default(0);
         });
