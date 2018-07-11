@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('article/trans_article_list', ['uses' => 'Article\TransArticleController@list']);
+Route::get('erp/database', ['uses' => 'Erp\DatabaseController@list']);
 
 
 Auth::routes();
