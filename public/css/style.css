@@ -56,6 +56,9 @@ border-radius: 4px;
   font-family: 'Lobster', cursive;
   font-size: 45px;
 }
+.black{
+  color:black
+}
 #about{
   font-family: "Lato";
   margin: 50px 0px;
@@ -299,6 +302,13 @@ transition: all 0.4s ease 0s;
 
 .sidebar-brand hr {
   margin: 8px 0px 87px 0px;
+}
+
+#back-header {
+  bottom: 50%;
+  right: 40%;
+  position: fixed;
+  z-index: 1;
 }
 
 #menu-toggle {
