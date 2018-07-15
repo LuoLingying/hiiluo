@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('article/trans_article_list', ['uses' => 'Article\TransArticleController@list']);
+Route::get('article/borrowed_article_list', ['uses' => 'Article\BorrowedArticleController@list']);
 Route::get('erp/database', ['uses' => 'Erp\DatabaseController@list']);
 
 

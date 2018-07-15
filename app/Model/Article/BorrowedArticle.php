@@ -5,9 +5,9 @@ namespace App\Model\Article;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class TransArticle extends Model
+class BorrowedArticle extends Model
 {
-    protected $table = 'trans_article';
+    protected $table = 'borrowed_article';
 
     public function list()
     {

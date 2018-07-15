@@ -20,8 +20,7 @@ class CreateArticlesTable extends Migration
             $table->string('description')->default('');
             $table->string('tag')->default('');
             $table->integer('type')->unsigned()->default(1);
-            $table->integer('created_at')->default(0);
-            $table->integer('uptated_at')->default(0);
+            $table->timestamps();
         });
     }
 

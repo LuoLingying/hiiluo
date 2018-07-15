@@ -13,6 +13,11 @@ body {
 /* .light-wrapper {
     background: #f7f7f7
 } */
+.divide150 {
+  width: 100%;
+  height: 150px;
+}
+
 .divide50 {
     width: 100%;
     height: 50px;
@@ -368,6 +373,12 @@ a#menu-close:hover {
   padding: 50px 0;
   /*background: none repeat scroll 0% 0% #F1F2ED;*/
   opacity: .8;
+}
+
+.description {
+  padding: 50px 50px;
+  /*background: none repeat scroll 0% 0% #F1F2ED;*/
+  opacity: .6;
 }
 
 /* Services */
