@@ -118,7 +118,11 @@
                     ruigu_supplier_invoice_detail -------- 供应商发票明细表
                 </a>
             </h3>
-            
+            <h3>
+                <a href="#ruigu_member_invoice" class="black">
+                    ruigu_member_invoice -------- 发票表
+                </a>
+            </h3>
             <h3>
                 <a href="#ruigu_invoice_apply" class="black">
                     ruigu_invoice_apply -------- 开票申请表
@@ -893,6 +897,22 @@
                 paid_tax 税额,
                 parentType 父级类型,
                 tax_price 含税单价
+            </pre>
+        </div>
+        <div id="ruigu_member_invoice">
+            <h3>ruigu_member_invoice - 发票表</h3>
+            <pre>
+                user_id 用户id,
+                name 发票抬头,
+                is_default  是否默认,
+                time 更新时间,
+                invoice_limit  开票额度,
+                taxpayer_code 纳税人识别码,
+                registered_address  注册地址,
+                registered_mobile 注册电话,
+                bank_name  开户行,
+                bank_account  银行账户,
+                bl_img  营业执照图片路径ID
             </pre>
         </div>
         <div id="ruigu_invoice_apply">

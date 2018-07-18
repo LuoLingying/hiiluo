@@ -12,7 +12,6 @@ class BorrowedArticleController extends Controller
     public function list(BorrowedArticle $borrowedArticle)
     {
         $list = $borrowedArticle->list();
-        // dd($list);
         return view('article.borrowed_article', [
             'list' => $list
         ]);

@@ -15,8 +15,9 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('article/borrowed_article_list', ['uses' => 'Article\BorrowedArticleController@list']);
-Route::get('erp/database', ['uses' => 'Erp\DatabaseController@list']);
+Route::get('article/borrowed_article_list', ['uses' => 'Article\BorrowedArticleController@list']); //转载文章列表
+Route::get('erp/database', ['uses' => 'Erp\DatabaseController@list']); //锐锢ERP数据库总结
+Route::any('/upload', 'Uploads\UploadPictureController@uploads'); //文件上传
 
 
 Auth::routes();
