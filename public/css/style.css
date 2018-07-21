@@ -376,7 +376,7 @@ a#menu-close:hover {
 }
 
 .description {
-  padding: 50px 50px;
+  padding: 0px 50px;
   /*background: none repeat scroll 0% 0% #F1F2ED;*/
   opacity: .6;
 }

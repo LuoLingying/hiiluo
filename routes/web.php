@@ -17,11 +17,15 @@ Route::get('/', function () {
 
 //转载文章列表
 Route::get('article/borrowed_article_list', ['uses' => 'Article\BorrowedArticleController@list']);
-//锐锢erp数据库整理
+//锐锢ERP数据库总结
 Route::get('erp/database', ['uses' => 'Erp\DatabaseController@list']);
-
+//文件上传
+Route::any('/uploads', 'Uploads\UploadPictureController@uploads');
+//发送邮件
+Route::any('/mail', 'Mail\SentMailController@mail');
 
 Auth::routes();
+
 
 //慕课课程学习
 //anth 自带的登录注册功能

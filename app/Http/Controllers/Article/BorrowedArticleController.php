@@ -16,9 +16,4 @@ class BorrowedArticleController extends Controller
             'list' => $list
         ]);
     }
-
-    public function upload()
-    {
-        return 'upload';
-    }
 }

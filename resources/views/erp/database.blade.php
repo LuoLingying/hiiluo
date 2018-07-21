@@ -118,7 +118,11 @@
                     ruigu_supplier_invoice_detail -------- 供应商发票明细表
                 </a>
             </h3>
-            
+            <h3>
+                <a href="#ruigu_member_invoice" class="black">
+                    ruigu_member_invoice -------- 发票表
+                </a>
+            </h3>
             <h3>
                 <a href="#ruigu_invoice_apply" class="black">
                     ruigu_invoice_apply -------- 开票申请表
@@ -824,6 +828,7 @@
                 quantity  操作数量,
                 back_qty  退回数量,取消收货时会改变，先进先出冲抵，不可以直接使用这个计算退回数量，此字段用来辅助计算,
                 type  操作类型1reject, 2recive, 3cancel,
+                -- 客户拒收的时候要记录三条reject的数据，但是当这三条数据的东西真的入库的时候会再记三条recive的数据，表示真的收到了。cancel的数据基本没用到 --
                 op_time  操作时间,
                 remark  备注，用来区分去取消收货操作
             </pre>
@@ -893,6 +898,22 @@
                 paid_tax 税额,
                 parentType 父级类型,
                 tax_price 含税单价
+            </pre>
+        </div>
+        <div id="ruigu_member_invoice">
+            <h3>ruigu_member_invoice - 发票表</h3>
+            <pre>
+                user_id 用户id,
+                name 发票抬头,
+                is_default  是否默认,
+                time 更新时间,
+                invoice_limit  开票额度,
+                taxpayer_code 纳税人识别码,
+                registered_address  注册地址,
+                registered_mobile 注册电话,
+                bank_name  开户行,
+                bank_account  银行账户,
+                bl_img  营业执照图片路径ID
             </pre>
         </div>
         <div id="ruigu_invoice_apply">
