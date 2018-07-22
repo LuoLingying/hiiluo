@@ -32,3 +32,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 //laravel中的文件上传
 Route::get('/upload', 'Article\BorrowedArticleController@upload');
+//日志记录
+Route::get('/log', 'Log\LogController@writeLog');
+//队列
+Route::get('/queue', 'Queue\QueueController@queue');
