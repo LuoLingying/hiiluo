@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 //转载文章列表
 Route::get('article/borrowed_article_list', ['uses' => 'Article\BorrowedArticleController@list']);
+Route::any('article/borrowed_article_edit', ['uses' => 'Article\BorrowedArticleController@edit']);
 //锐锢ERP数据库总结
 Route::get('erp/database', ['uses' => 'Erp\DatabaseController@list']);
 //文件上传

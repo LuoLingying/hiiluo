@@ -13,4 +13,9 @@ class BorrowedArticle extends Model
     {
         return DB::table($this->table)->get();
     }
+
+    public function save($article = [])
+    {
+        return DB::table($this->table)->insert($article);
+    }
 }

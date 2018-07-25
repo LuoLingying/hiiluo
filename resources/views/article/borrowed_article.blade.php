@@ -1,10 +1,7 @@
 @extends('layouts.hiiluo', ['page_title' => '转载的文章'])
 
 @section('content')
-    <h1 class="header-text">转载的文章</h1>
-    <div class="progress plain">
-        <div class="bar" style="width: 82%;"></div>
-    </div>
+    <a href="{{ url('article/borrowed_article_edit') }}" class="btn adding">添加</a>
     <div>
     @foreach ($list as $key => $article)
         <p class="space">

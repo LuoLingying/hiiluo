@@ -1,0 +1,14 @@
+
+
+
+项目有三个引入css文件和js文件的地方
+
+1. /hiiluo/resources/views/section/home.blade.php
+这个是美丽的首页我下载网上的模板时引用的 入口即在index.blade.php中引入
+
+2. /hiiluo/resources/views/layouts/app.blade.php
+这个是练习laravel的Auth什么的时候,通过命令"php artisan make:auth"自动生成的laravel自带的入口文件
+还包括了/hiiluo/resources/views/home.blade.php这个home文件
+
+3. /hiiluo/resources/views/layouts/hiiluo.blade.php
+这个是我准备在后期的项目中大量使用的主要layouts模板，里面引用了layui的css和js文件，以后使用到的地方方便查看layui文档

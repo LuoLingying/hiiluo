@@ -154,6 +154,12 @@ a.header-btn {
   padding: 17px 25px;
 }
 
+.adding {
+  float: right;
+  color:  #72b6af;
+  font-size: 20px;
+}
+
 .header-btn:hover {
     color: rgb(35, 140, 133);
     background-color: #fff;
