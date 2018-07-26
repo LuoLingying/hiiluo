@@ -13,7 +13,7 @@
         <label class="layui-form-label">链接</label>
         <div class="layui-input-block">
             <input type="text" name="href" placeholder="请输入文章链接"
-                autocomplete="off" class="layui-input" style="width:60%">
+                autocomplete="off" class="layui-input" lay-verify="href" style="width:60%">
         </div>
     </div>
 
@@ -48,7 +48,14 @@ layui.use('form', function() {
     form.verify({
         title: function(value) {
             if(value.length < 5) {
-                return '标题至少得5个字符啊';
+                return '标题至少得5个字符';
+            }
+        },
+        href:function(value){
+            if (value.length > 0) {
+                if(!value.match(/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/)){
+                    return '这应该不是一个链接哦';
+                }
             }
         }
     });

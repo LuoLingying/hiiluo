@@ -12,5 +12,6 @@
         <span class="description">description:  {{ $article->description }}<span>
         <span class="progress">updated:  {{ $article->updated_at }}<span>
     @endforeach
+    <div id="page_cont"></div>
     </div>
 @endsection

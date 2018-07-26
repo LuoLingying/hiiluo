@@ -7,6 +7,8 @@
         <meta name="author" content="">
 
         <title>海螺 - {{$page_title}}</title>
+        <!-- JQuery 2.0.1 -->
+        <script src="{{ asset('js/jquery-1.10.2.js') }}"></script>
 
         <!-- Bootstrap core CSS -->
         <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
@@ -19,9 +21,13 @@
         <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
     </head>
-    <body class="layui-layout-body">
+    <body>
         <div class="layui-main">
-            <header><img src="{{ asset('img/office.jpg') }}" class="divide150"></header>
+            <header>
+                <a href="{{ url('/') }}">
+                    <img src="{{ asset('img/office.jpg') }}" class="divide150">
+                </a>
+            </header>
             <main>
                 <h1 class="header-text">{{$page_title}}</h1>
                 <div class="progress plain">
@@ -35,4 +41,14 @@
     </body>
     <script src="{{ asset('layui/layui.js') }}"></script>
     @yield('script')
+    <script>
+        layui.use('laypage', function () {
+            var laypage = layui.laypage;
+            var setting = {
+                elem: 'page_cont',
+                count: 21
+            };
+            laypage.render(setting);
+        });
+    </script>
 </html>

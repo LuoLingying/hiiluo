@@ -15,6 +15,9 @@ $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );
 
+// 引入全局使用的自定义函数
+require_once __DIR__ . '/../app/Functions.php';
+
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces

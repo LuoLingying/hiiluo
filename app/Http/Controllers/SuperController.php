@@ -15,6 +15,8 @@ class SuperController extends Controller
     {
         // 获取请求参数
         $this->input = $this->_trim_input($request->all());
+        // 设置默认时区为上海
+        date_default_timezone_set("Asia/Shanghai");
     }
 
     /**

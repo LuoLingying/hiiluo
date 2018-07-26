@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Article;
 
+use App\Exceptions\HLogicException;
 use App\Model\Article\BorrowedArticle;
 use App\Http\Controllers\SuperController;
+use Illuminate\Mail\Message;
 
 class BorrowedArticleController extends SuperController
 {
@@ -22,12 +24,16 @@ class BorrowedArticleController extends SuperController
             $article = [
                 'title' => $this->input['title'],
                 'href' => $this->input['href'],
-                'description' => $this->input['description']
+                'description' => $this->input['description'],
                 //tag的逻辑想好后添加tag存储
+                'created_at' => date('H-m-d H:i:s'),
+                'updated_at' => date('H-m-d H:i:s')
             ];
-            $res = $borrowedArticle->save($this->input);
-            dd($res);
-            return view('article.borrowed_article');
+            $res = $borrowedArticle->save($article);
+            if($res) {
+                return redirect('article/borrowed_article');
+            }
+            return hJsonError('添加失败！');
         };
         return view('article.borrowed_article_edit');
     }
