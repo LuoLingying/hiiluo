@@ -36,3 +36,11 @@ function hJsonError($msg, $code = 0)
     }
     return response()->json(['code' => $code, 'msg' => $msg]);
 }
+
+/**
+ * 返回当前时间如2018-06-27 08:00:00
+ */
+function hDate()
+{
+    return date('H-m-d H:i:s');
+}

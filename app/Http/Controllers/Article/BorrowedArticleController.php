@@ -26,8 +26,8 @@ class BorrowedArticleController extends SuperController
                 'href' => $this->input['href'],
                 'description' => $this->input['description'],
                 //tag的逻辑想好后添加tag存储
-                'created_at' => date('H-m-d H:i:s'),
-                'updated_at' => date('H-m-d H:i:s')
+                'created_at' => hDate(),
+                'updated_at' => hDate()
             ];
             $res = $borrowedArticle->save($article);
             if($res) {
