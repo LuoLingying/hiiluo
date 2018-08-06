@@ -33,6 +33,21 @@
                     think_channel - 分类表
                 </a>
             </h3>
+            <h3>
+                <a href="#ruigu_product_spec" class="black">
+                    ruigu_product_spec - 商品参数
+                </a>
+            </h3>
+            <h3>
+                <a href="#ruigu_product_puredesc" class="black">
+                    ruigu_product_puredesc - 商品包装清单/售后服务表
+                </a>
+            </h3>
+            <h3>
+                <a href="#ruigu_product_package_info" class="black">
+                    ruigu_product_package_info - 商品包装信息表
+                </a>
+            </h3>
         </div>
         <img src="{{ asset('img/paris.jpg') }}" style=width:100%>
         <div id="ruigu_product_sale_configuration">
@@ -83,6 +98,46 @@
                 createdOn  创建时间,
                 invoice_code  税收编码,
                 delivery  设置交货期限
+            </pre>
+        </div>
+        <div id="ruigu_product_spec">
+            <h3>ruigu_product_spec - 商品参数</h3>
+            <pre>
+                parentId,
+                specKey 参数名称
+                specValue 参数值
+                specOrder 显示顺序,
+                parentType,
+                is_allow_search 是否允许搜索
+            </pre>
+        </div>
+        <div id="ruigu_product_puredesc">
+            <h3>ruigu_product_puredesc - 商品包装清单/售后服务表</h3>
+            <pre>
+                id  自增Id,
+                productDescName  描述名称,
+                productDesc  描述内容,
+                displayOrder  展示顺序,
+                type  类型：0默认，1包装清单，2售后服务，3权利声明,
+                parentId  CRM 框架所需,
+                parentType  CRM 框架所需
+            </pre>
+        </div>
+        <div id="ruigu_product_package_info">
+            <h3>ruigu_product_package_info - 商品包装信息表</h3>
+            <pre>
+                quantity_bak  包装数量,
+                unitName  计价单位名称,
+                minUnitQuantity  包装内数量,
+                width  包装长度,
+                height  包装宽度,
+                depth  包装高度,
+                grossWeight  毛重,
+                netWeight  包装净重,
+                packageTypeId  1.小2.中3.大,
+                parentId  外键ID框架生成(产品Id),
+                parentType  外键类型框架生成,
+                warehouse_updated
             </pre>
         </div>
     </body>
