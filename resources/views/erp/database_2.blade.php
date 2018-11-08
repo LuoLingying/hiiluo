@@ -140,5 +140,21 @@
                 warehouse_updated
             </pre>
         </div>
+        <div id="ruigu_system_role_related">
+            <h3>ruigu_system_role_related - 锐锢系统用户类型关联表</h3>
+            <pre>
+                id  自增主键,
+                user_id  用户ID,
+                true_name  真实姓名,
+                role  角色（取自ruigu_system_role）,
+                dc_id  对应总仓ID,
+                i_enable  是否启用,
+                created  创建时间,
+                modified  更新时间,
+                erp_user_name  erp系统username,
+                is_tester 是否测试账号：0否1是,
+                is_lbs  发送坐标
+            </pre>
+        </div>
     </body>
 </html>

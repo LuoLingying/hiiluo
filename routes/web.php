@@ -18,9 +18,10 @@ Route::get('/', function () {
 //转载文章列表
 Route::get('article/borrowed_article_list', ['uses' => 'Article\BorrowedArticleController@list']);
 Route::any('article/borrowed_article_edit', ['uses' => 'Article\BorrowedArticleController@edit']);
-//锐锢ERP数据库总结
+//锐锢ERP数据库
 Route::get('erp/database_1', ['uses' => 'Erp\DatabaseController@list_1']);
 Route::get('erp/database_2', ['uses' => 'Erp\DatabaseController@list_2']);
+Route::get('erp/lottery', ['uses' => 'Erp\DatabaseController@lottery']);
 //文件上传
 Route::any('/uploads', 'Uploads\UploadPictureController@uploads');
 //发送邮件

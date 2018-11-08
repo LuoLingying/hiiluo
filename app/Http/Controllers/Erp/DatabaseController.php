@@ -18,4 +18,10 @@ class DatabaseController extends Controller
     {
         return view('erp.database_2');
     }
+
+    //ruiguerp抽奖案例
+    public function lottery()
+    {
+        header('Location:' . URL('lottery.php'));
+    }
 }
